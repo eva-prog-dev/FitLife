@@ -1,9 +1,8 @@
-# Проект FitLife - MVP версия 1.0
 WATER_PER_KG = 30
 ML_TO_LITERS = 1000
 
 
-# 1. Знакомство
+# 1. Знакомство c пользователем
 print("Приветствую в приложении FitLife!")
 user_name = input("Давайте познакомимся! Как Вас зовут? - ")
 
@@ -37,20 +36,20 @@ except ValueError:
     print("Введите рост числовым значением - пример: 1.65")
 
 
-# 3. Логика расчетов
+# 3. Расчеты ИМТ и нормы воды в день
 def bmi_calculation(weight: float, height: float):
-    """Calculate BMI using weight and height."""
+    """Расчет ИМТ"""
     return weight / (height ** 2)
 
 
 def water_calculation(weight: float):
-    """Calculate recommended daily water intake in liters."""
+    """Расчет необходимого количества воды в день"""
     return weight * WATER_PER_KG / ML_TO_LITERS
 
 
-# 4. Вывод красивого результата
+# 4. Вывод результата
 def report():
-    """Print the user's FitLife report."""
+    """Печать отчета"""
     print()
     print(
         f"Отчет для пользователя: "
