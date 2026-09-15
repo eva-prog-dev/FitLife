@@ -54,15 +54,15 @@ def report():
     print()
     print(
         f"Отчет для пользователя: "
-        f"{user_name} ({user_age} г.)"
+        f"{user_name} ({user_age} г.)",
     )
     print(
         f"Твой Индекс Массы Тела: "
-        f"{round(bmi_calculation(user_weight, user_height), 1)}"
+        f"{round(bmi_calculation(user_weight, user_height), 1)}",
     )
     print(
         f"Рекомендуемая норма воды: "
-        f"{round(water_calculation(user_weight), 1)} л. в день"
+        f"{round(water_calculation(user_weight), 1)} л. в день",
     )
     print()
     print("Расчет окончен. Будьте здоровы!")
